@@ -18,14 +18,27 @@ p {
     padding: 5px 10px;
 }
 
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+    background-color: silver;
+}
+
+#headers {
+    padding: 5px 10px;
+}
+
 .chart-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
+    margin-top: 10px;
 }
 
 .chart-container>div {
-    background-color: red;
+    padding: 5px 10px;
 }
 
 button {
