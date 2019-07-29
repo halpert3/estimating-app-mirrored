@@ -18,14 +18,6 @@ p {
     padding: 5px 10px;
 }
 
-.header-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    margin-bottom: 10px;
-    background-color: silver;
-}
-
 #headers {
     padding: 5px 10px;
 }
@@ -41,14 +33,42 @@ p {
     padding: 5px 10px;
 }
 
-.table {
+table {
     width: 100%;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
-td {
-    border: 1px solid black;
+thead {
+    background-color: silver;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+td,
+th {
+    width: 25%;
+    padding: 5px 10px;
+}
+
+td.right-align {
+    text-align: right;
+}
+
+tbody::before {
+    content: '';
+    display: table-row;
+    height: 10px;
+}
+
+tbody {
+    margin-top: 100px;
+}
+
+tr:nth-child(even) {
+    background-color: #ebf6f9;
 }
 
 button {
